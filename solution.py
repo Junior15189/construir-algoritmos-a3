@@ -16,7 +16,6 @@ if res.text.strip().lower() != "true":
 
 
 def get_json(url):
-    """GET que devolve lista/dict; avisa se a API respondeu algo inesperado."""
     r = s.get(url)
     try:
         return r.json()
